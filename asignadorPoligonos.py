@@ -1,4 +1,4 @@
-#Librerias para poder leer excel, alamenar poligonos y para formato wkt de coordenadas
+#Librerias para poder leer excel, almacenar poligonos y para formato wkt de coordenadas
 import pandas as pd 
 from shapely import wkt
 from shapely.geometry import Polygon, Point
