@@ -4,7 +4,7 @@ from shapely import wkt
 from shapely.geometry import Polygon, Point
 
 #Ruta especifica del archivo con las coordendas
-df = pd.read_csv("C:/Users/DATA ANALYST MD/Documents/CUADRANTES RUTAS MD.csv")
+df = pd.read_csv("")
 
 print(df.head)
 
@@ -24,7 +24,7 @@ for index, row in df.iterrows():
 
 
 
-getCoordenadas = pd.read_excel("C:/Users/DATA ANALYST MD/Documents/ClientesDB.xlsx" )
+getCoordenadas = pd.read_excel("" )
 print(getCoordenadas.head)
 negocios = []
 for index, row in getCoordenadas.iterrows():
@@ -58,7 +58,7 @@ if len(getCoordenadas) == len(df_negociosPoligonos):
     getCoordenadas.to_excel('ClientesBD.xlsx')
     print("Las longitudes de los índices coinciden. Columna 'Poligono' agregada exitosamente.")
 else:
-    print(f"¡Error! Los índices no coinciden: {len(getCoordenadas)} filas en getCoordenadas y {len(df_negociosPoligonos)} filas en df_negociosPoligonos.")
+    print(f" Los índices no coinciden: {len(getCoordenadas)} filas en getCoordenadas y {len(df_negociosPoligonos)} filas en df_negociosPoligonos.")
 
 
 
